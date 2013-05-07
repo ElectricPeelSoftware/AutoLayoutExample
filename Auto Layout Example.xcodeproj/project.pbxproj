@@ -13,6 +13,9 @@
 		D0A6C304173987450085C393 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D0A6C302173987450085C393 /* Credits.rtf */; };
 		D0A6C307173987450085C393 /* EPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A6C306173987450085C393 /* EPSAppDelegate.m */; };
 		D0A6C30A173987450085C393 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0A6C308173987450085C393 /* MainMenu.xib */; };
+		D0A6C3141739875F0085C393 /* EPSAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A6C3111739875F0085C393 /* EPSAvatarView.m */; };
+		D0A6C3151739875F0085C393 /* NSImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A6C3131739875F0085C393 /* NSImage+Extensions.m */; };
+		D0A6C317173987870085C393 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A6C316173987870085C393 /* avatar.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		D0A6C305173987450085C393 /* EPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPSAppDelegate.h; sourceTree = "<group>"; };
 		D0A6C306173987450085C393 /* EPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPSAppDelegate.m; sourceTree = "<group>"; };
 		D0A6C309173987450085C393 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D0A6C3101739875F0085C393 /* EPSAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSAvatarView.h; sourceTree = "<group>"; };
+		D0A6C3111739875F0085C393 /* EPSAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSAvatarView.m; sourceTree = "<group>"; };
+		D0A6C3121739875F0085C393 /* NSImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Extensions.h"; sourceTree = "<group>"; };
+		D0A6C3131739875F0085C393 /* NSImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Extensions.m"; sourceTree = "<group>"; };
+		D0A6C316173987870085C393 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 		D0A6C2F9173987450085C393 /* Auto Layout Example */ = {
 			isa = PBXGroup;
 			children = (
+				D0A6C3101739875F0085C393 /* EPSAvatarView.h */,
+				D0A6C3111739875F0085C393 /* EPSAvatarView.m */,
+				D0A6C3121739875F0085C393 /* NSImage+Extensions.h */,
+				D0A6C3131739875F0085C393 /* NSImage+Extensions.m */,
 				D0A6C305173987450085C393 /* EPSAppDelegate.h */,
 				D0A6C306173987450085C393 /* EPSAppDelegate.m */,
 				D0A6C308173987450085C393 /* MainMenu.xib */,
@@ -93,6 +105,7 @@
 		D0A6C2FA173987450085C393 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0A6C316173987870085C393 /* avatar.jpg */,
 				D0A6C2FB173987450085C393 /* Auto Layout Example-Info.plist */,
 				D0A6C2FC173987450085C393 /* InfoPlist.strings */,
 				D0A6C2FF173987450085C393 /* main.m */,
@@ -157,6 +170,7 @@
 				D0A6C2FE173987450085C393 /* InfoPlist.strings in Resources */,
 				D0A6C304173987450085C393 /* Credits.rtf in Resources */,
 				D0A6C30A173987450085C393 /* MainMenu.xib in Resources */,
+				D0A6C317173987870085C393 /* avatar.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +183,8 @@
 			files = (
 				D0A6C300173987450085C393 /* main.m in Sources */,
 				D0A6C307173987450085C393 /* EPSAppDelegate.m in Sources */,
+				D0A6C3141739875F0085C393 /* EPSAvatarView.m in Sources */,
+				D0A6C3151739875F0085C393 /* NSImage+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
