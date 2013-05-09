@@ -19,6 +19,7 @@
 	avatarView.image = [NSImage imageNamed:@"avatar.jpg"];
 	avatarView.circleDiameter = 80;
     [avatarView setContentHuggingPriority:NSLayoutPriorityRequired forOrientation:NSLayoutConstraintOrientationVertical];
+    [avatarView setContentHuggingPriority:NSLayoutPriorityRequired forOrientation:NSLayoutConstraintOrientationHorizontal];
     
 	[self.window.contentView addSubview:avatarView];
 	
@@ -42,12 +43,13 @@
     [requiredTextField setEditable:NO];
     [requiredTextField setSelectable:NO];
     requiredTextField.translatesAutoresizingMaskIntoConstraints = NO;
+    [requiredTextField setContentHuggingPriority:NSLayoutPriorityRequired forOrientation:NSLayoutConstraintOrientationHorizontal];
     
     [self.window.contentView addSubview:requiredTextField];
     
 	NSDictionary *views = NSDictionaryOfVariableBindings(avatarView, optionalTextField, requiredTextField);
 	
-	[self.window.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[avatarView]-[optionalTextField]-(>=20)-[requiredTextField]-|" options:NSLayoutFormatAlignAllBottom metrics:nil views:views]];
+	[self.window.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[avatarView]-[optionalTextField]-[requiredTextField]-|" options:NSLayoutFormatAlignAllBottom metrics:nil views:views]];
 	[self.window.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[avatarView]-|" options:0 metrics:nil views:views]];
 }
 
